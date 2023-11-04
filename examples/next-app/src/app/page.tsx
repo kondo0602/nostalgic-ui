@@ -1,6 +1,6 @@
 import { button } from '@nostalgic-ui/css';
 
-export default function Home() {
+const Home = () => {
   return (
     <main>
       <h1>Welcome to Nostalgic-UI.</h1>
@@ -11,4 +11,6 @@ export default function Home() {
       <button className={button({ color: 'white' })}>White</button>
     </main>
   );
-}
+};
+
+export default Home;
