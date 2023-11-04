@@ -26,6 +26,12 @@ const Home = () => {
         <button className={button({ color: 'red', variant: 'outline' })}>Red</button>
         <button className={button({ color: 'yellow', variant: 'outline' })}>Yellow</button>
       </div>
+      <div>
+        <button className={button({ color: 'blue', variant: 'ghost' })}>Blue</button>
+        <button className={button({ color: 'green', variant: 'ghost' })}>Green</button>
+        <button className={button({ color: 'red', variant: 'ghost' })}>Red</button>
+        <button className={button({ color: 'yellow', variant: 'ghost' })}>Yellow</button>
+      </div>
     </main>
   );
 };

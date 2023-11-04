@@ -6,7 +6,6 @@ import { borderSquare, pseudoShadow } from '../utils';
 export const button = recipe({
   base: [
     borderSquare,
-    pseudoShadow,
     {
       display: 'inline-flex',
       flexShrink: 0,
@@ -39,8 +38,8 @@ export const button = recipe({
       },
     },
     variant: {
-      solid: {},
-      outline: {},
+      solid: { ...pseudoShadow },
+      outline: { ...pseudoShadow },
       ghost: {},
     },
     size: {
@@ -79,6 +78,19 @@ export const button = recipe({
     },
     {
       variants: {
+        color: 'blue', variant: 'ghost',
+      },
+      style: {
+        backgroundColor: 'transparent',
+        color: theme.color.sky500,
+        borderColor: 'transparent',
+        ':hover': {
+          backgroundColor: theme.color.sky100,
+        },
+      },
+    },
+    {
+      variants: {
         color: 'green', variant: 'solid',
       },
       style: {
@@ -101,6 +113,19 @@ export const button = recipe({
         boxShadow: `inset ${theme.border.mdNegative} ${theme.border.mdNegative} ${theme.color.slate300}`,
         ':active': {
           boxShadow: `inset ${theme.border.md} ${theme.border.md} ${theme.color.slate300}`,
+        },
+      },
+    },
+    {
+      variants: {
+        color: 'green', variant: 'ghost',
+      },
+      style: {
+        backgroundColor: 'transparent',
+        color: theme.color.lime500,
+        borderColor: 'transparent',
+        ':hover': {
+          backgroundColor: theme.color.lime100,
         },
       },
     },
@@ -133,6 +158,19 @@ export const button = recipe({
     },
     {
       variants: {
+        color: 'red', variant: 'ghost',
+      },
+      style: {
+        backgroundColor: 'transparent',
+        color: theme.color.red500,
+        borderColor: 'transparent',
+        ':hover': {
+          backgroundColor: theme.color.red100,
+        },
+      },
+    },
+    {
+      variants: {
         color: 'yellow', variant: 'solid',
       },
       style: {
@@ -155,6 +193,19 @@ export const button = recipe({
         boxShadow: `inset ${theme.border.mdNegative} ${theme.border.mdNegative} ${theme.color.slate300}`,
         ':active': {
           boxShadow: `inset ${theme.border.md} ${theme.border.md} ${theme.color.slate300}`,
+        },
+      },
+    },
+    {
+      variants: {
+        color: 'yellow', variant: 'ghost',
+      },
+      style: {
+        backgroundColor: 'transparent',
+        color: theme.color.yellow400,
+        borderColor: 'transparent',
+        ':hover': {
+          backgroundColor: theme.color.yellow100,
         },
       },
     },
