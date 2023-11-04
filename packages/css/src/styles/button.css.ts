@@ -13,6 +13,14 @@ export const button = recipe({
       justifyContent: 'center',
       alignItems: 'center',
       cursor: 'pointer',
+      ':disabled': {
+        backgroundColor: theme.color.neutral300,
+        color: theme.color.neutral900,
+        borderColor: theme.color.neutral900,
+        boxShadow: `inset ${theme.border.mdNegative} ${theme.border.mdNegative} ${theme.color.neutral500}`,
+        pointerEvents: 'none',
+        opacity: 0.6,
+      },
     },
   ],
   variants: {
