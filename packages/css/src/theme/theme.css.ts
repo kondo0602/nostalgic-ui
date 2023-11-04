@@ -270,4 +270,8 @@ export const theme = createGlobalTheme(':root', {
     rose900: '#881337',
     rose950: '#4c0519',
   },
+  border: {
+    md: '4px',
+    mdNegative: '-4px',
+  },
 });

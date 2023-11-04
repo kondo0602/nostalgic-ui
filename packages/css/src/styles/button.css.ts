@@ -1,9 +1,10 @@
 import { recipe } from '@vanilla-extract/recipes';
 import { theme } from '../theme';
-import { pseudoShadow } from '../utils';
+import { borderSquare, pseudoShadow } from '../utils';
 
 export const button = recipe({
   base: [
+    borderSquare,
     pseudoShadow,
     {
       display: 'inline-flex',
