@@ -1,1 +1,2 @@
-export * from './sample.css';
+export * from './styles';
+export * from './theme';
