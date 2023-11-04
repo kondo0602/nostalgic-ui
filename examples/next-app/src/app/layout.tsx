@@ -1,7 +1,13 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Press_Start_2P } from 'next/font/google';
+import './globals.css';
+import 'modern-normalize/modern-normalize.css';
 
-const inter = Inter({ subsets: ['latin'] });
+export const press2pButton = Press_Start_2P({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={press2pButton.className}>{children}</body>
     </html>
   );
 }
