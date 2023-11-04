@@ -1,6 +1,8 @@
-import { StyleRule } from '@vanilla-extract/css';
 import { calc } from '@vanilla-extract/css-utils';
+
 import { theme } from '../theme';
+
+import type { StyleRule } from '@vanilla-extract/css';
 
 const widthExcludingBorder = calc.subtract('100%', theme.border.md);
 

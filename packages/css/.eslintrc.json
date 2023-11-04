@@ -1,4 +1,0 @@
-{
-  "root": true,
-  "extends": "./node_modules/@nostalgic-ui/config-react/.eslintrc.json"
-}
