@@ -1,5 +1,5 @@
-import { recipe } from "@vanilla-extract/recipes";
-import { theme } from "../theme";
+import { recipe } from '@vanilla-extract/recipes';
+import { theme } from '../theme';
 
 export const button = recipe({
   base: [
@@ -13,24 +13,25 @@ export const button = recipe({
   ],
   variants: {
     color: {
-      primary: {
+      blue: {
         backgroundColor: theme.color.sky500,
         color: theme.color.white,
       },
-      secondary: {
-        backgroundColor: theme.color.white,
+      red: {
+        backgroundColor: theme.color.red500,
+        color: theme.color.white,
+      },
+      yellow: {
+        backgroundColor: theme.color.yellow500,
         color: theme.color.black,
       },
-      success: {
+      green: {
         backgroundColor: theme.color.lime500,
         color: theme.color.white,
       },
-      warning: {
-        backgroundColor: theme.color.yellow500,
-      },
-      danger: {
-        backgroundColor: theme.color.red500,
-        color: theme.color.white,
+      white: {
+        backgroundColor: theme.color.white,
+        color: theme.color.black,
       },
     },
     size: {
@@ -39,7 +40,7 @@ export const button = recipe({
     },
   },
   defaultVariants: {
-    color: 'primary',
+    color: 'blue',
     size: 'md',
-  }
+  },
 });

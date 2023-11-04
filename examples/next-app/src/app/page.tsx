@@ -1,9 +1,13 @@
-import * as styles from '@nostalgic-ui/css';
+import { button } from '@nostalgic-ui/css';
 
 export default function Home() {
   return (
     <main>
-      <h1 className={styles.sample}>nostalgic-ui</h1>
+      <button className={button({ color: 'blue' })}>Blue</button>
+      <button className={button({ color: 'red' })}>Red</button>
+      <button className={button({ color: 'green' })}>Green</button>
+      <button className={button({ color: 'yellow' })}>Yellow</button>
+      <button className={button({ color: 'white' })}>White</button>
     </main>
   );
 }
