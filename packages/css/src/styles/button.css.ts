@@ -69,7 +69,7 @@ export const button = recipe({
       style: {
         backgroundColor: 'transparent',
         color: theme.color.sky500,
-        borderColor: theme.color.sky500,
+        borderColor: 'currentcolor',
         boxShadow: `inset ${theme.border.mdNegative} ${theme.border.mdNegative} ${theme.color.slate300}`,
         ':active': {
           boxShadow: `inset ${theme.border.md} ${theme.border.md} ${theme.color.slate300}`,
@@ -109,7 +109,7 @@ export const button = recipe({
       style: {
         backgroundColor: 'transparent',
         color: theme.color.lime500,
-        borderColor: theme.color.lime500,
+        borderColor: 'currentcolor',
         boxShadow: `inset ${theme.border.mdNegative} ${theme.border.mdNegative} ${theme.color.slate300}`,
         ':active': {
           boxShadow: `inset ${theme.border.md} ${theme.border.md} ${theme.color.slate300}`,
@@ -149,7 +149,7 @@ export const button = recipe({
       style: {
         backgroundColor: 'transparent',
         color: theme.color.red500,
-        borderColor: theme.color.red500,
+        borderColor: 'currentcolor',
         boxShadow: `inset ${theme.border.mdNegative} ${theme.border.mdNegative} ${theme.color.slate300}`,
         ':active': {
           boxShadow: `inset ${theme.border.md} ${theme.border.md} ${theme.color.slate300}`,
@@ -189,7 +189,7 @@ export const button = recipe({
       style: {
         backgroundColor: 'transparent',
         color: theme.color.yellow400,
-        borderColor: theme.color.yellow400,
+        borderColor: 'currentcolor',
         boxShadow: `inset ${theme.border.mdNegative} ${theme.border.mdNegative} ${theme.color.slate300}`,
         ':active': {
           boxShadow: `inset ${theme.border.md} ${theme.border.md} ${theme.color.slate300}`,
