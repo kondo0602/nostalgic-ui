@@ -1,4 +1,4 @@
-import { button, list, listItem } from '@nostalgic-ui/css';
+import { button, input, list, listItem } from '@nostalgic-ui/css';
 
 const Home = () => {
   return (
@@ -34,6 +34,13 @@ const Home = () => {
           <button className={button({ color: 'red', variant: 'ghost' })}>Red</button>
           <button className={button({ color: 'yellow', variant: 'ghost' })}>Yellow</button>
         </div>
+      </section>
+      <section>
+        <h2>Inputs</h2>
+        <input className={input()} />
+        <input className={input({ color: 'red' })} />
+        <input className={input({ size: 'sm' })} />
+        <input className={input({ color: 'red', size: 'sm' })} />
       </section>
       <section>
         <h2>Lists</h2>
