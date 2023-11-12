@@ -24,23 +24,21 @@ export const button = recipe({
   ],
   variants: {
     color: {
+      white: {
+        backgroundColor: theme.color.white,
+        color: theme.color.black,
+      },
       blue: {},
       green: {},
       red: {},
       yellow: {},
-      white: {
-        backgroundColor: theme.color.white,
-        color: theme.color.black,
-        boxShadow: `inset ${theme.border.mdNegative} ${theme.border.mdNegative} ${theme.color.slate300}`,
-        ':active': {
-          boxShadow: `inset ${theme.border.md} ${theme.border.md} ${theme.color.slate300}`,
-        },
-      },
     },
     variant: {
       solid: { ...pseudoShadow },
       outline: { ...pseudoShadow },
-      ghost: {},
+      ghost: {
+        borderColor: 'transparent',
+      },
     },
     size: {
       sm: { padding: '6px 10px' },
@@ -49,6 +47,30 @@ export const button = recipe({
   },
 
   compoundVariants: [
+    {
+      variants: {
+        color: 'white', variant: 'solid',
+      },
+      style: {
+        backgroundColor: theme.color.white,
+        color: theme.color.black,
+        boxShadow: `inset ${theme.border.mdNegative} ${theme.border.mdNegative} ${theme.color.slate300}`,
+        ':active': {
+          boxShadow: `inset ${theme.border.md} ${theme.border.md} ${theme.color.slate300}`,
+        },
+      },
+    },
+    {
+      variants: {
+        color: 'white', variant: 'ghost',
+      },
+      style: {
+        backgroundColor: 'transparent',
+        ':hover': {
+          backgroundColor: theme.color.slate100,
+        },
+      },
+    },
     {
       variants: {
         color: 'blue', variant: 'solid',
@@ -83,7 +105,6 @@ export const button = recipe({
       style: {
         backgroundColor: 'transparent',
         color: theme.color.sky500,
-        borderColor: 'transparent',
         ':hover': {
           backgroundColor: theme.color.sky100,
         },
@@ -123,7 +144,6 @@ export const button = recipe({
       style: {
         backgroundColor: 'transparent',
         color: theme.color.lime500,
-        borderColor: 'transparent',
         ':hover': {
           backgroundColor: theme.color.lime100,
         },
@@ -163,7 +183,6 @@ export const button = recipe({
       style: {
         backgroundColor: 'transparent',
         color: theme.color.red500,
-        borderColor: 'transparent',
         ':hover': {
           backgroundColor: theme.color.red100,
         },
@@ -203,7 +222,6 @@ export const button = recipe({
       style: {
         backgroundColor: 'transparent',
         color: theme.color.yellow400,
-        borderColor: 'transparent',
         ':hover': {
           backgroundColor: theme.color.yellow100,
         },
@@ -212,7 +230,7 @@ export const button = recipe({
   ],
 
   defaultVariants: {
-    color: 'blue',
+    color: 'white',
     variant: 'solid',
     size: 'md',
   },
