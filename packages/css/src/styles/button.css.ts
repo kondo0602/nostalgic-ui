@@ -35,7 +35,10 @@ export const button = recipe({
     },
     variant: {
       solid: { ...pseudoShadow },
-      outline: { ...pseudoShadow },
+      outline: {
+        backgroundColor: theme.color.white,
+        ...pseudoShadow,
+      },
       ghost: {
         borderColor: 'transparent',
       },
@@ -89,7 +92,6 @@ export const button = recipe({
         color: 'blue', variant: 'outline',
       },
       style: {
-        backgroundColor: 'transparent',
         color: theme.color.sky500,
         borderColor: 'currentcolor',
         boxShadow: `inset ${theme.border.mdNegative} ${theme.border.mdNegative} ${theme.color.slate300}`,
@@ -128,7 +130,6 @@ export const button = recipe({
         color: 'green', variant: 'outline',
       },
       style: {
-        backgroundColor: 'transparent',
         color: theme.color.lime500,
         borderColor: 'currentcolor',
         boxShadow: `inset ${theme.border.mdNegative} ${theme.border.mdNegative} ${theme.color.slate300}`,
@@ -167,7 +168,6 @@ export const button = recipe({
         color: 'red', variant: 'outline',
       },
       style: {
-        backgroundColor: 'transparent',
         color: theme.color.red500,
         borderColor: 'currentcolor',
         boxShadow: `inset ${theme.border.mdNegative} ${theme.border.mdNegative} ${theme.color.slate300}`,
@@ -206,7 +206,6 @@ export const button = recipe({
         color: 'yellow', variant: 'outline',
       },
       style: {
-        backgroundColor: 'transparent',
         color: theme.color.yellow400,
         borderColor: 'currentcolor',
         boxShadow: `inset ${theme.border.mdNegative} ${theme.border.mdNegative} ${theme.color.slate300}`,

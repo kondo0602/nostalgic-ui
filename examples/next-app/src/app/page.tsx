@@ -2,7 +2,7 @@ import { button, input, list, listItem } from '@nostalgic-ui/css';
 
 const Home = () => {
   return (
-    <main>
+    <main style={{ backgroundColor: 'purple' }}>
       <h1>Welcome to Nostalgic-UI.</h1>
       <section>
         <h2>Buttons</h2>
