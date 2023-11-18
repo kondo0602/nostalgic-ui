@@ -1,8 +1,10 @@
 import { button, input, list, listItem, radio } from '@nostalgic-ui/css';
 
+import * as styles from './page.css'
+
 const Home = () => {
   return (
-    <main style={{ backgroundColor: 'purple' }}>
+    <main className={styles.wrapper}>
       <h1>Welcome to Nostalgic-UI.</h1>
       <section>
         <h2>Buttons</h2>
@@ -36,20 +38,22 @@ const Home = () => {
           <button className={button({ color: 'yellow', variant: 'ghost' })}>Yellow</button>
         </div>
       </section>
-      <section>
+      <section className={styles.vStack}>
         <h2>Inputs</h2>
         <input className={input()} />
         <input className={input({ color: 'red' })} />
         <input className={input({ size: 'sm' })} />
         <input className={input({ color: 'red', size: 'sm' })} />
-        <label>
-          <input className={radio} type="radio" name="sample" value="yes" checked />
-          Yes
-        </label>
-        <label>
-          <input className={radio} type="radio" name="sample" value="no" />
-          No
-        </label>
+        <div className={styles.hStack}>
+          <label>
+            <input className={radio} type="radio" name="sample" value="yes" />
+            Yes
+          </label>
+          <label>
+            <input className={radio} type="radio" name="sample" value="no" />
+            No
+          </label>
+        </div>
       </section>
       <section>
         <h2>Lists</h2>
