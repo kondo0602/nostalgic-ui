@@ -1,4 +1,4 @@
-import { button, input, list, listItem } from '@nostalgic-ui/css';
+import { button, input, list, listItem, radio } from '@nostalgic-ui/css';
 
 const Home = () => {
   return (
@@ -42,6 +42,14 @@ const Home = () => {
         <input className={input({ color: 'red' })} />
         <input className={input({ size: 'sm' })} />
         <input className={input({ color: 'red', size: 'sm' })} />
+        <label>
+          <input className={radio} type="radio" name="sample" value="yes" checked />
+          Yes
+        </label>
+        <label>
+          <input className={radio} type="radio" name="sample" value="no" />
+          No
+        </label>
       </section>
       <section>
         <h2>Lists</h2>
