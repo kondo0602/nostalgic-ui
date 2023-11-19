@@ -4,12 +4,9 @@ import { theme } from '../theme';
 import { borderSquare } from '../utils';
 
 export const input = recipe({
-  base: [
-    borderSquare,
-    {
-      padding: '10px 12px',
-    },
-  ],
+  base: {
+    ...borderSquare,
+  },
   variants: {
     color: {
       white: {},
@@ -28,5 +25,6 @@ export const input = recipe({
   },
   defaultVariants: {
     color: 'white',
+    size: 'md',
   },
 });
