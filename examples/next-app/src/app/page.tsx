@@ -1,4 +1,4 @@
-import { button, input, list, listItem, radio, textarea } from '@nostalgic-ui/css';
+import { button, checkbox, input, list, listItem, radio, textarea } from '@nostalgic-ui/css';
 
 import * as styles from './page.css'
 
@@ -48,6 +48,17 @@ const Home = () => {
         <h3>Textarea</h3>
         <textarea className={textarea()} />
         <textarea className={textarea({ color: "red"})} />
+        <h3>Checkbox</h3>
+        <div className={styles.hStack}>
+          <label>
+            <input className={checkbox} type="checkbox" name="sample" value="yes" />
+            Yes
+          </label>
+          <label>
+            <input className={checkbox} type="checkbox" name="sample" value="no" />
+            No
+          </label>
+        </div>
         <h3>Radio</h3>
         <div className={styles.hStack}>
           <label>
