@@ -42,4 +42,8 @@
   .button-md {
     @apply py-2.5 px-3;
   }
+
+  .button-ghost {
+    @apply bg-transparent text-black border-none shadow-none hover:bg-gray-200;
+  }
 }
