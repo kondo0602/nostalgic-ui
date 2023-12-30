@@ -19,7 +19,10 @@ module.exports = {
             100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%,
             4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px)
           )`,
-        }
+        },
+        ".button-shadow": {
+          "box-shadow": "inset -4px -4px rgba(0, 0, 0, 0.25)",
+        },
       })
     }),
   ],
