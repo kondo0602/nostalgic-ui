@@ -14,18 +14,18 @@
   }
 
   .button-blue {
-    @apply button bg-sky-500 text-white button-shadow;
+    @apply button bg-sky-500 text-white;
   }
 
-  .btn-green {
-    @apply button;
+  .button-green {
+    @apply button bg-lime-500 text-white;
   }
 
-  .btn-red {
-    @apply button;
+  .button-red {
+    @apply button bg-red-500 text-white;
   }
 
-  .btn-yellow {
-    @apply button;
+  .button-yellow {
+    @apply button bg-yellow-400 text-black;
   }
 }
