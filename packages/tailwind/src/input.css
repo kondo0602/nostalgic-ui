@@ -28,4 +28,8 @@
   .button-yellow {
     @apply button bg-yellow-400 text-black;
   }
+
+  .button-sm {
+    @apply py-1.5 px-2;
+  }
 }
