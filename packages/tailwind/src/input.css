@@ -10,23 +10,29 @@
 
 @layer components {
   .button {
-    @apply inline-flex flex-shrink-0 justify-center items-center border-square button-md button-shadow active:button-shadow-reverse;
+    @apply
+    inline-flex flex-shrink-0 justify-center items-center
+    bg-white
+    text-black
+    border-square
+    button-md button-shadow
+    hover:bg-gray-200 active:button-shadow-reverse;
   }
 
   .button-blue {
-    @apply button bg-sky-500 text-white;
+    @apply button bg-sky-500 text-white hover:bg-sky-600;
   }
 
   .button-green {
-    @apply button bg-lime-500 text-white;
+    @apply button bg-lime-500 text-white hover:bg-lime-600;
   }
 
   .button-red {
-    @apply button bg-red-500 text-white;
+    @apply button bg-red-500 text-white hover:bg-red-600;
   }
 
   .button-yellow {
-    @apply button bg-yellow-400 text-black;
+    @apply button bg-yellow-400 text-black hover:bg-yellow-500;
   }
 
   .button-sm {
