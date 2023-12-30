@@ -10,7 +10,7 @@
 
 @layer components {
   .button {
-    @apply inline-flex flex-shrink-0 justify-center items-center py-2.5 px-3 border-square button-shadow;
+    @apply inline-flex flex-shrink-0 justify-center items-center border-square button-md button-shadow active:button-shadow-reverse;
   }
 
   .button-blue {
@@ -31,5 +31,9 @@
 
   .button-sm {
     @apply py-1.5 px-2;
+  }
+
+  .button-md {
+    @apply py-2.5 px-3;
   }
 }

@@ -23,6 +23,9 @@ module.exports = {
         ".button-shadow": {
           "box-shadow": "inset -4px -4px rgba(0, 0, 0, 0.25)",
         },
+        ".button-shadow-reverse": {
+          "box-shadow": "inset 4px 4px rgba(0, 0, 0, 0.25)",
+        },
       })
     }),
   ],
