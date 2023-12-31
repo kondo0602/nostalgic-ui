@@ -44,6 +44,6 @@
   }
 
   .button-ghost {
-    @apply bg-transparent text-black border-none shadow-none hover:bg-gray-200;
+    @apply bg-transparent text-black border-none shadow-none hover:bg-gray-200 active:shadow-none;
   }
 }
