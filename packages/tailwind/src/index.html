@@ -13,27 +13,38 @@
     <title>Nostalgic UI</title>
   </head>
 
-  <body class="">
+  <body>
     <h1 class="m-4 bg-red-800 p-3 text-3xl font-bold underline">
       Nostalgic UI
     </h1>
-    <section class="flex flex-col gap-4 p-8">
+    <section class="flex flex-col gap-8 p-8">
       <h2 class="text-2xl">Buttons</h2>
-      <div class="grid grid-cols-6 gap-4">
-        <button class="button">Default</button>
-        <button class="button-blue">Blue</button>
-        <button class="button-green">Green</button>
-        <button class="button-red">Red</button>
-        <button class="button-yellow">Yellow</button>
-        <button class="button" disabled>Disabled</button>
-        <button class="button button-sm">Default</button>
-        <button class="button-blue button-sm">Blue</button>
-        <button class="button-green button-sm">Green</button>
-        <button class="button-red button-sm">Red</button>
-        <button class="button-yellow button-sm">Yellow</button>
-        <button class="button" disabled>Disabled</button>
-        <button class="button button-ghost">Default</button>
-      </div>
+      <section class="flex flex-col gap-4">
+        <h3>Button Sizes</h3>
+        <div class="flex items-center gap-4">
+          <button class="button button-sm">Small</button>
+          <button class="button">Default</button>
+          <button class="button button-lg">Large</button>
+        </div>
+      </section>
+      <section class="flex flex-col gap-4">
+        <h3>Button Colors</h3>
+        <div class="flex items-center gap-4">
+          <button class="button">Default</button>
+          <button class="button button-blue">Blue</button>
+          <button class="button button-green">Green</button>
+          <button class="button button-red">Red</button>
+          <button class="button button-yellow">Yellow</button>
+        </div>
+      </section>
+      <section class="flex flex-col gap-4">
+        <h3>Button Variants</h3>
+        <div class="flex items-center gap-4">
+          <button class="button">Default</button>
+          <button class="button button-ghost">Ghost</button>
+          <button class="button" disabled>Disabled</button>
+        </div>
+      </section>
     </section>
   </body>
 </html>

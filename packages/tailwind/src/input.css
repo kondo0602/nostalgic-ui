@@ -52,7 +52,17 @@
     @apply py-2.5 px-3;
   }
 
+  .button-lg {
+    @apply py-3.5 px-4;
+  }
+
   .button-ghost {
-    @apply bg-transparent text-black border-none shadow-none hover:bg-gray-200 active:shadow-none;
+    @apply
+    bg-transparent
+    text-black
+    border-none
+    shadow-none
+    hover:bg-gray-200
+    active:shadow-none;
   }
 }
