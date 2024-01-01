@@ -65,4 +65,21 @@
     hover:bg-gray-200
     active:shadow-none;
   }
+
+  .input {
+    @apply
+      border-square
+  }
+
+  .input-sm {
+    @apply py-1 px-2;
+  }
+
+  .input-md {
+    @apply py-2 px-2;
+  }
+
+  .input-lg {
+    @apply py-3 px-2;
+  }
 }
