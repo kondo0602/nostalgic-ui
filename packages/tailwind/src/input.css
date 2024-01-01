@@ -11,12 +11,21 @@
 @layer components {
   .button {
     @apply
-    inline-flex flex-shrink-0 justify-center items-center
+    inline-flex
+    flex-shrink-0
+    justify-center
+    items-center
     bg-white
     text-black
     border-square
-    button-md button-shadow
-    hover:bg-gray-200 active:button-shadow-reverse;
+    button-md
+    button-shadow
+    hover:bg-gray-200
+    active:button-shadow-reverse
+    disabled:bg-neutral-300
+    disabled:text-neutral-500
+    disabled:border-neutral-500
+    disabled:pointer-events-none;
   }
 
   .button-blue {
