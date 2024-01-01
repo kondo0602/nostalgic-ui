@@ -96,4 +96,11 @@
     before:checkbox-uncheck
     before:checked:checkbox-check
   }
+
+  .radio {
+    @apply
+    appearance-none
+    w-4
+    before:checked:radio-check
+  }
 }
