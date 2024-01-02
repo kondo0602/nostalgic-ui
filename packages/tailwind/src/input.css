@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Press Start 2P", system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .button {
+    @apply
+    inline-flex
+    flex-shrink-0
+    justify-center
+    items-center
+    bg-white
+    text-black
+    border-square
+    button-md
+    button-shadow
+    hover:bg-gray-200
+    active:button-shadow-reverse
+    disabled:bg-neutral-300
+    disabled:text-neutral-500
+    disabled:border-neutral-500
+    disabled:pointer-events-none;
+  }
+
+  .button-blue {
+    @apply button bg-sky-500 text-white hover:bg-sky-600;
+  }
+
+  .button-green {
+    @apply button bg-lime-500 text-white hover:bg-lime-600;
+  }
+
+  .button-red {
+    @apply button bg-red-500 text-white hover:bg-red-600;
+  }
+
+  .button-yellow {
+    @apply button bg-yellow-400 text-black hover:bg-yellow-500;
+  }
+
+  .button-sm {
+    @apply py-1.5 px-2;
+  }
+
+  .button-md {
+    @apply py-2.5 px-3;
+  }
+
+  .button-lg {
+    @apply py-3.5 px-4;
+  }
+
+  .button-ghost {
+    @apply
+    bg-transparent
+    text-black
+    border-none
+    shadow-none
+    hover:bg-gray-200
+    active:shadow-none;
+  }
+
+  .input {
+    @apply
+      border-square
+  }
+
+  .input-sm {
+    @apply py-1 px-2;
+  }
+
+  .input-md {
+    @apply py-2 px-2;
+  }
+
+  .input-lg {
+    @apply py-3 px-2;
+  }
+
+  .textarea {
+    @apply
+    border-square
+    py-2 px-2;
+  }
+
+  .checkbox {
+    @apply
+    appearance-none
+    w-4
+    before:checkbox-uncheck
+    before:checked:checkbox-check
+  }
+
+  .radio {
+    @apply
+    appearance-none
+    w-4
+    before:checked:radio-check
+  }
+}

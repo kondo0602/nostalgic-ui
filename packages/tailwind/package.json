@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "@nostalgic-ui/tailwind",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/esm/index.js",
+      "types": "./src/index.ts"
+    }
+  },
+  "files": [
+    "dist/**",
+    "src/**"
+  ],
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tsup",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.9",
+    "tailwindcss": "^3.4.0"
+  }
+}

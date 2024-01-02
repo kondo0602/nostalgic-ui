@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap"
+      rel="stylesheet"
+    />
+    <title>Nostalgic UI</title>
+  </head>
+
+  <body>
+    <h1 class="m-4 bg-red-800 p-3 text-3xl font-bold underline">
+      Nostalgic UI
+    </h1>
+
+    <section class="flex flex-col gap-8 p-8">
+      <h2 class="text-2xl">Buttons</h2>
+      <section class="flex flex-col gap-2">
+        <h3>Button Sizes</h3>
+        <div class="flex items-center gap-4">
+          <button class="button button-sm">Small</button>
+          <button class="button">Default</button>
+          <button class="button button-lg">Large</button>
+        </div>
+      </section>
+      <section class="flex flex-col gap-2">
+        <h3>Button Colors</h3>
+        <div class="flex items-center gap-4">
+          <button class="button">Default</button>
+          <button class="button button-blue">Blue</button>
+          <button class="button button-green">Green</button>
+          <button class="button button-red">Red</button>
+          <button class="button button-yellow">Yellow</button>
+        </div>
+      </section>
+      <section class="flex flex-col gap-2">
+        <h3>Button Variants</h3>
+        <div class="flex items-center gap-4">
+          <button class="button">Default</button>
+          <button class="button button-ghost">Ghost</button>
+          <button class="button" disabled>Disabled</button>
+        </div>
+      </section>
+    </section>
+    <section class="flex flex-col gap-4 p-8">
+      <h2 class="text-2xl">Input</h2>
+      <div class="flex items-center gap-4">
+        <input
+          class="input input-sm"
+          aria-label="Small Input"
+          placeholder="small input"
+        />
+        <input
+          class="input input-md"
+          aria-label="Medium Input"
+          placeholder="medium input"
+        />
+        <input
+          class="input input-lg"
+          aria-label="Large Input"
+          placeholder="large input"
+        />
+      </div>
+      <h2 class="text-2xl">Textarea</h2>
+      <div class="flex items-center gap-4">
+        <textarea
+          class="textarea"
+          aria-label="Textarea"
+          placeholder="textarea"
+        ></textarea>
+      </div>
+      <h2 class="text-2xl">Checkbox</h2>
+      <div class="flex items-center gap-4">
+        <label>
+          <input type="checkbox" class="checkbox" />
+          Yes
+        </label>
+        <label>
+          <input type="checkbox" class="checkbox" checked />
+          No
+        </label>
+      </div>
+      <h2 class="text-2xl">Radio</h2>
+      <div class="flex items-center gap-4">
+        <label>
+          <input type="radio" class="radio" name="radio" />
+          Yes
+        </label>
+        <label>
+          <input type="radio" class="radio" name="radio" checked />
+          No
+        </label>
+      </div>
+    </section>
+  </body>
+</html>
